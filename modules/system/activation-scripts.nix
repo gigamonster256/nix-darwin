@@ -67,6 +67,7 @@ in
       ${cfg.activationScripts.nix-daemon.text}
       ${cfg.activationScripts.time.text}
       ${cfg.activationScripts.networking.text}
+      ${cfg.activationScripts.wireless.text}
       ${cfg.activationScripts.keyboard.text}
       ${cfg.activationScripts.fonts.text}
       ${cfg.activationScripts.nvram.text}
@@ -122,6 +123,7 @@ in
     system.activationScripts.extraUserActivation.text = mkDefault "";
     system.activationScripts.preUserActivation.text = mkDefault "";
     system.activationScripts.postUserActivation.text = mkDefault "";
+    system.activationScripts.wireless.text = mkDefault "";
 
   };
 }
